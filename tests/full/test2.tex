@@ -1,0 +1,19 @@
+%arara: pdflatex
+\documentclass%
+[a4paper]%
+{%
+article%
+}
+\usepackage{acro} % Acro package
+\DeclareAcronym{CD}{
+	short = CD,
+	long = compact disc,
+}
+\usepackage{hyperref}
+%Preamble finished
+
+\begin{document}% Now write text
+Foo \ac{CD}
+%Bar,
+Foobar %Not Foobat
+\end{document}
